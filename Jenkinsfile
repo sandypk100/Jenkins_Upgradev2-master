@@ -13,6 +13,7 @@ pipeline {
                               echo 'Now archiving the artifacts'
                               archiveArtifacts artifacts: '**/*.war'
                               
+                              
                         }
                         
                   }      
