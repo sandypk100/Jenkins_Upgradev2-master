@@ -11,8 +11,10 @@ pipeline {
                     archiveArtifacts artifacts: '**/*.war'
                 }
             }
-            stage('Deploy application in Staging'){
-             build job: Deploy_application_staging   
+        stage('Deploy application in Staging'){
+            steps {
+                 build job: Deploy_application_staging   
+                }
                 
             }
         }
